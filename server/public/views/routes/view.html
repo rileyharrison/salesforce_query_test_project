@@ -1,0 +1,39 @@
+<p>
+
+    <div ng-repeat="Villain in data.response">
+        <h2>{{ Villain.Name }}</h2>
+        <p>Power:
+            {{ Villain.Power }}
+        </p>
+        <p>Foe:
+            {{ Villain.Foe }}
+        </p>
+        <p>Weakness:
+            {{ Villain.Weakness }}
+        </p>
+
+
+        <img ng-src="{{ Villain.Image }}" alt="Description" />
+
+        <button ng-click="deleteVillain(Villain._id)">Delete </button>
+
+
+
+    </div>
+    <p>
+        hello!
+    </p>
+
+    <input type = "text" ng-model = "myQuery" placeholder = "enter query"/>
+    <button>Make this button call a routine to submit a custom query</button>
+
+    <div ng-repeat="(key, value) in forceData.response">
+        <p>
+            {{ key}}
+            {{ value}}
+        </p>
+
+
+    </div>
+
+</p>
